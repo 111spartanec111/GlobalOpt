@@ -1,17 +1,62 @@
 .first {
     min-height: 680px;
     background: url('../img/bg-glopt.png') center (center / cover) no-repeat;
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 23px;
+        align-items: center;
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            min-height: 140px;
+            width: 265px;
+            text-align: center;
+        }
+    }
+    &__descr {
+        margin-top: 7px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #ffffff;
+                
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 230px;
+        height: 57px;
+        border-radius: 25px;
+        background-color: $main-color;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        width: 63px;
+        height: 63px;
+    }
 }
+
+
 .header {   
     display: flex;
    
-    padding-top: 60px;
+    padding-top: 23px;
     align-items: center;
     .menu__header {
         display: flex;
         justify-content: space-between;
         
-        margin: 0;
+        
         list-style-type: none;
         margin-left: 50px;
         width: 615px;
@@ -37,24 +82,28 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 39px;
+        padding-bottom: 21px;
     }
     &__call {
         font-size: 14px;
         font-weight: 300;
         color: #ffffff;
+        line-height: 24px;
     }
     &__number {
         font-size: 19px;
         font-weight: 700;
         color: #ffffff;
+        line-height: 24px;
     }
     &__btn {
-        margin-left: 17px;
-        width: 165px;
+        margin-left: 18px;
+        margin-bottom: 13px;
+        width: 160px;
         height: 45px;
         background-color: $main-color;
-        border-radius: 15px;
+        border-radius: 25px;
         font-size: 12px;
         line-height: 22px;
         font-weight: 400;
@@ -63,4 +112,34 @@
         border: none;
 
     }
+    &__descr {
+        text-align: center;
+        color:#ffffff;
+        margin-top: 5px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    &__h1 {
+        text-align: center;
+        margin: 0;
+        color: $main-color;
+        font-size: 72px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+    &__h2 {
+        text-align: center;
+        color:#ffffff;
+        margin: 0;
+        font-size: 42px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 0.5;
+    }
+}
+.stripe {
+    text-align: center;
+    margin-top: 40px;
 }
