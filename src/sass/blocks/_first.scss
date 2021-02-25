@@ -37,6 +37,17 @@
         text-transform: uppercase;
         color: #ffffff;
         border: none;
+        
+        &:hover {
+            background: $main-color-active;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            transform: translateY(2px);
+        }
     }
     &__img {
         display: flex;
@@ -110,6 +121,16 @@
         text-transform: uppercase;
         color: #ffffff;
         border: none;
+        &:hover {
+            background: $main-color-active;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            transform: translateY(2px);
+        }
 
     }
     &__descr {
