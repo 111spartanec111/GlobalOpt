@@ -1,0 +1,66 @@
+.first {
+    min-height: 680px;
+    background: url('../img/bg-glopt.png') center (center / cover) no-repeat;
+}
+.header {   
+    display: flex;
+   
+    padding-top: 60px;
+    align-items: center;
+    .menu__header {
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 0;
+        list-style-type: none;
+        margin-left: 50px;
+        width: 615px;
+        &_item {
+            border-right: 1px dotted #ffffff;
+            padding-right: 21px;
+            &:last-child {
+			    border-right: none;
+            }
+        }
+        &_link {
+            font-size: 15px;
+            font-weight: 400;
+            color: #ffffff;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    &__call {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__number {
+        font-size: 19px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    &__btn {
+        margin-left: 17px;
+        width: 165px;
+        height: 45px;
+        background-color: $main-color;
+        border-radius: 15px;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+
+    }
+}
