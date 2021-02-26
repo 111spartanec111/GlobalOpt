@@ -101,7 +101,7 @@
                 <div class="header__call">Есть вопросы?</div> 
                 <a href="tel:+73339990000" class="header__number">+7 (926) 423-01-00</a>          
             </div>
-            <button class="header__btn">Перезвоните мне</button> 
+            <button data-modal="consultation" class="header__btn">Перезвоните мне</button> 
 
         <div class="hamburger">
             <span></span>
@@ -133,7 +133,7 @@
             <div class="first__descr">Экспресс доставка 1-2 дня из Гуан- <br> чжоу в Москву от 25$/кг</div>
         </div>
     </div>
-    <button class="first__btn">Получить расчет</button>
+    <button data-modal="consultation" class="first__btn">Получить расчет</button>
 </div>
 </section>
 
@@ -288,11 +288,25 @@
 
 
 <div class="overlay">
+
+    <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Заполните форму заявки</div>
+        <div class="modal__descr">мы вам перезвоним</div>
+        <form class="feed-form" action="#">
+            <input name="name" placeholder="Ваше имя" type="text">
+            <input name="phone"  placeholder="Ваш телефон" >
+            <input name="email"  placeholder="Ваш E-mail" type="email">
+            <button class="button button_submit">Заказать консультацию</button>
+        </form>
+    </div>
+
     <div class="modal modal_mini" id="thanks">
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Спасибо за обращение!</div>
         <div class="modal__descr">Свяжусь с вами в ближайшее время!</div>
     </div>
+   
 </div>
 
 

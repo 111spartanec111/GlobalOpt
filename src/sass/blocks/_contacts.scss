@@ -105,22 +105,34 @@
 }
 
 #email-error {
-    top: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -11px;
     color: red;
 }
 
 #name-error {
-    top: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -11px;
     color: red;
 }
 
+#phone-error {
+    font-weight: 700;
+    position: relative;
+    top: -11px;
+    color: red;
+}
 
 #text-error {
+    font-weight: 700;
     top: 50px;
     color: red;  
 }
 
 #checkbox-error {
-    top: 50px;
+    font-weight: 700;
+    top: 40px;
     color: red;
 }

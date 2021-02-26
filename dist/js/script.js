@@ -6,10 +6,16 @@
 // $('[data-modal=consultation]').on('click', function(){
 //   $('.overlay, #thanks').fadeIn('slow');
 // });
-// Крестик
-$('.overlay, modal__close').on('click', function() {
-  $('.overlay, #thanks').fadeOut('slow');
+
+// Вызов модалки по клику на кнопки на 1 экране
+$('[data-modal=consultation]').on('click', function(){
+  $('.overlay, #consultation').fadeIn('slow');
 });
+// Крестик
+$(' .modal__close').on('click', function() {
+  $('.overlay, #thanks, #consultation').fadeOut('slow');
+});
+
 
 
 // Меню
@@ -17,6 +23,7 @@ const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       close = document.querySelector('.menu__close');
       overlay = document.querySelector('.menu__overlay')
+     
 
       hamburger.addEventListener('click',()=> {
         menu.classList.add('active');
@@ -29,6 +36,7 @@ const hamburger = document.querySelector('.hamburger'),
       overlay.addEventListener('click',()=> {
         menu.classList.remove('active');
       });
+      
 
 
 // Заполнение полосок от заданного значения
@@ -47,6 +55,7 @@ function validateForms(form){
           required: true,
           minlength: 2
         },
+        phone: "required",
         textarea: {
           required: true,
           minlength: 5
@@ -62,7 +71,7 @@ function validateForms(form){
           required: "Введите своё имя",
           minlength: jQuery.validator.format("Введите минимум {0} символа")
         },
-        
+        phone: "Введите ваш номер телефона",
         email: {
           required: "Пожалуйста, введите почту",
           email: "Неправильно введена почта!"
@@ -111,7 +120,9 @@ function validateForms(form){
       url: "mailer/smart.php",
       data: $(this).serialize()
     }).done(function(){
+      $('#consultation').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
+      
       $('form').trigger('reset');
     });
     return false;
