@@ -73,7 +73,7 @@
         width: 615px;
         &_item {
             border-right: 1px dotted #ffffff;
-            padding-right: 21px;
+            padding-right: 10px;
             &:last-child {
 			    border-right: none;
             }
@@ -93,7 +93,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        margin-left: 39px;
+        margin-left: 33px;
         padding-bottom: 21px;
     }
     &__call {
