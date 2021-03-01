@@ -99,6 +99,7 @@ function validateForms(form){
   
   validateForms('#consultation-form');
   validateForms('#consultation form');
+  validateForms('#catalog__wrapper form');
 
 
 // Кнопка активна , если checkbox нажат!

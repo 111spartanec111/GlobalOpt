@@ -186,4 +186,92 @@
         }
         
     }
+    &__title-contact {
+        text-align: center;
+        margin-top: 55px;
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+
+    &__contact {
+        position: relative;
+        margin-top: 72px;
+        border: 1px solid #898989;
+        &-img {
+            background-color:#ffffff;
+            text-align: center;
+            width: 115px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -52px;
+        }
+    }
+    &-form {
+        display: flex;
+        justify-content: center;
+        padding: 65px 0 52px 0;
+        input {
+            margin-left: 2px;
+            margin-right: 2px;
+            width: 267px;
+            height: 45px;
+            border-radius: 25px;
+            background-color: #fff;
+            margin-bottom: 15px;
+            border: 1px solid #898989;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 66px;
+            outline: 0;
+        }
+        #email-error {
+            font-weight: 500;
+            position: absolute;
+            top: 112px;
+            color: red;
+            left: 65%;
+        }
+        
+        #name-error {
+            font-weight: 500;
+            position: absolute;
+            top: 112px;
+            color: red;
+            left: 180px;
+        }
+        
+        #phone-error {
+            font-weight: 500;
+            position: absolute;
+            top: 112px;
+            color: red;
+        }
+    }
+    &_button {
+        position: relative;
+        width: 180px;
+        height: 45px;
+        border-radius: 25px;
+        border: none;
+        background-color: $main-color;
+        color:#ffffff; 
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        outline: 0;
+    }
+    &_button-wrapper {
+        position: absolute;
+        width: 200px;
+        background: #fff;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -23px;
+    }
 }
