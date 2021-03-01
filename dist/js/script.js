@@ -1,13 +1,16 @@
 // слайдер
 var slider = tns({
   container: '.slider',
-  items: 1,
-  slideBy: 'page',
+  items: 3,
+  slideBy: 1,
   autoplay: false,
   controls: false,
   nav: false,
-  mouseDrag: true
-  });
+  mouseDrag: true,
+  center: true,
+  
+  gutter: 20,
+});
 
 document.querySelector('.prev').addEventListener ('click', function () {
   slider.goTo('prev'); 
@@ -19,7 +22,7 @@ document.querySelector('.next').addEventListener ('click', function () {
 
 
 
-const { name } = require("browser-sync");
+// const { name } = require("browser-sync");
 
 function toggleSlide(item) {
   $(item).each(function(i) {
