@@ -1,3 +1,25 @@
+// слайдер
+var slider = tns({
+  container: '.slider',
+  items: 1,
+  slideBy: 'page',
+  autoplay: false,
+  controls: false,
+  nav: false,
+  mouseDrag: true
+  });
+
+document.querySelector('.prev').addEventListener ('click', function () {
+  slider.goTo('prev'); 
+});
+
+document.querySelector('.next').addEventListener ('click', function () {
+  slider.goTo('next'); 
+});
+
+
+
+const { name } = require("browser-sync");
 
 function toggleSlide(item) {
   $(item).each(function(i) {
@@ -158,3 +180,4 @@ function validateForms(form){
   });
   
   new WOW().init();
+
