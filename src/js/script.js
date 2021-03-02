@@ -1,26 +1,49 @@
 // слайдер
-var slider = tns({
-  container: '.slider',
-  items: 3,
-  slideBy: 1,
-  autoplay: false,
-  controls: false,
-  nav: false,
-  mouseDrag: true,
-  center: true,
+// var slider = tns({
+//   container: '.slider',
+//   items: 3,
+//   slideBy: 1,
+//   autoplay: false,
+//   controls: false,
+//   nav: false,
+//   mouseDrag: true,
+//   center: true,
   
-  gutter: 20,
+//   gutter: 20,
+// });
+
+// document.querySelector('.prev').addEventListener ('click', function () {
+//   slider.goTo('prev'); 
+// });
+
+// document.querySelector('.next').addEventListener ('click', function () {
+//   slider.goTo('next'); 
+// });
+
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows:true,
+		dots:false,
+		slidesToShow:3,
+		autoplay:false,
+		speed:1000,
+		centerMode: true,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
 });
-
-document.querySelector('.prev').addEventListener ('click', function () {
-  slider.goTo('prev'); 
-});
-
-document.querySelector('.next').addEventListener ('click', function () {
-  slider.goTo('next'); 
-});
-
-
 
 // const { name } = require("browser-sync");
 
