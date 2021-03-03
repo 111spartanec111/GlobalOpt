@@ -29,10 +29,17 @@ $(document).ready(function(){
 		speed:1000,
 		centerMode: true,
 		responsive:[
+      {
+				breakpoint: 920,
+				settings: {
+					slidesToShow:1,
+          centerMode: false,
+				}
+			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow:2
+					slidesToShow:1
 				}
 			},
 			{
