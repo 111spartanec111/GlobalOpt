@@ -15,7 +15,7 @@
 <body>
 
 
-
+<!-- 
 <div class="menu">
     <div class="menu__block">
         <div class="menu__close">
@@ -64,7 +64,7 @@
         </div>
     </div>
     <div class="menu__overlay"></div>
-</div>
+</div> -->
 
 
 
@@ -92,12 +92,12 @@
             <a href="#" class="logo_img"><img src="img/glopt.png" alt="logo"></a>
         </div>
             <ul class="menu__header">
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Преимущества</a></li>
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Наша работа</a></li>
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Цены</a></li>
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Схема работы</a></li>
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Отзывы</a></li>
-                <li class="menu__header_item"><a href="#" class="menu__header_link">Контакты</a></li>
+                <li class="menu__header_item"><a href="#advantages" class="menu__header_link">Преимущества</a></li>
+                <li class="menu__header_item"><a href="#work" class="menu__header_link">Наша работа</a></li>
+                <li class="menu__header_item"><a href="#catalog" class="menu__header_link">Цены</a></li>
+                <li class="menu__header_item"><a href="#scheme" class="menu__header_link">Схема работы</a></li>
+                <li class="menu__header_item"><a href="#feedback" class="menu__header_link">Отзывы</a></li>
+                <li class="menu__header_item"><a href="#map" class="menu__header_link">Контакты</a></li>
             </ul>
             <div class="header__phone">
                 <div class="header__call">Есть вопросы?</div> 
@@ -139,7 +139,7 @@
 </div>
 </section>
 
-<section class="advantages">
+<section class="advantages" id="advantages">
     <div class="container">
         <div class="title">Преимущества работы с GlobalOpt</div>
         <div class="advantages__wrapper">
@@ -203,7 +203,7 @@
     </div>
 </section>
 
-<section class="work">
+<section class="work" id="work">
     <div class="container">
         <div class="title">Наша работа - больше чем просто доставка</div>
         <div class="line"></div>
@@ -235,7 +235,7 @@
 </section>
 
 
-<section class="catalog">
+<section class="catalog" id="catalog">
     <div class="container">
         <div class="title">Цены на любой вариант доставки</div>
         <div class="line"></div>
@@ -349,7 +349,7 @@
     <div class="agent__subtitle">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.</div>
 </section>
 
-<section class="scheme">
+<section class="scheme" id="scheme">
     <div class="container">
     <div class="title">Схема работы с нами</div>
     <div class="scheme__wrapper_1">
@@ -410,7 +410,7 @@
 </div>
 </section>
 
-<section class="feedback">
+<section class="feedback" id="feedback">
     <div class="container">
         <div class="title">Отзывы наших клиентов</div>
         <div class="line"></div>
@@ -479,59 +479,38 @@
     </div>
 </section>
 
-<section class="contacts" id="contacts">
+<section class="map" id="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A03dd187e6c1e100ff9f38f3164cdc47cfac2bb4150c061a2b6a79a307c3833e9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+</section>
+
+<section class="footer">
     <div class="container">
-
-        <div class="contacts__wrapper">
-            <div class="contacts__photo">
-                <img src="img/main.jpg" alt="">
+        <div class="footer__header">
+            <div class="footer__logo">
+                <a href="#" class="logo_img"><img src="img/footer_logo.png" alt="logo"></a>
             </div>
-            <div class="contacts__descr">
-                <div class="title title_fz16 promo__subtitle">Контакты</div>
-                <div class="title title_fz36 promo__title contacts__title">Свяжитесь со мной</div>
-                <div class="about__divider"></div>
-                <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
-                <div class="contacts__social">
-                    <a href="" class="contacts__link">
-                        <img src="icons/social/Facebook-contact.svg" alt="Facebook">
-                    </a>
-                    <a href="" class="contacts__link">
-                        <img src="icons/social/Telegram-contact.svg" alt="Telegram">
-                    </a>
-                    <a href="" class="contacts__link">
-                        <img src="icons/social/Instagram-contact.svg" alt="Instagram">
-                    </a>
-                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
-                
-                <form id="consultation-form" action="#" class="contacts__form">
-                    <div class="contacts__input">
-                        <input required name="name" id="name" type="text">
-                        <label for="name">Ваше имя</label>
-                    </div>
-                    <div class="contacts__input">
-                        <input required name="email" id="email" type="email">
-                        <label for="email">Ваша почта</label>
-                    </div>
-
-                    <div class="contacts__textarea">
-                        <textarea name="textarea" id="text"></textarea>
-                        <label for="text">Ваше сообщение</label>
-                    </div>
-                    <div class="contacts__triggers">
-                        <button class="contacts__btn btn" >Отправить сообщение</button> <!-- id="submit_1" disabled="disabled" data-modal="consultation" -->
-                        <div class="contacts__policy">
-                            <input required type="checkbox" class="checkbox_btn" name="checkbox" id="check">
-                            <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></span>
-                        </div>
-                    </div>
-                </form>
-                
+            <div class="footer__title">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>    
+                <div class="footer__phone">
+                    <div class="header__call">Есть вопросы?</div> 
+                    <a href="tel:+73339990000" class="header__number">+7 (926) 423-01-00</a>          
                 </div>
-            </div>
+                <button data-modal="consultation" class="header__btn footer__btn">Перезвоните мне</button> 
         </div>
+        <div class="footer__line"></div>
+        <div class="footer__descr">
+            <div class="footer__site">© 2010 Scratch.com.ua</div>
+            <a href="" class="footer__policy">Политика конфидециальности</a>
+            <div class="footer__end">
+                <div class="footer__text">Создание сайта:</div>
+                <a href="" class="footer__img"><img src="icons/site.png" alt=""></a>
+            </div>
+            
 
+        </div>
     </div>
-</section> 
+</section>
+
+
 
 
 <div class="overlay">
@@ -556,7 +535,7 @@
    
 </div>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+
     <script src="js/jquery-3.5.1.min.js"></script>   <!-- подлючение jQuery из файла -->
     <script src="js/jquery.validate.min.js"></script> <!-- подключение модуля валидации для Форм -->
     <script src="js/jquery.maskedinput.min.js"></script>

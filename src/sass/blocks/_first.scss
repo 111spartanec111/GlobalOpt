@@ -77,6 +77,9 @@
             &:last-child {
 			    border-right: none;
             }
+            a {
+                transition: all 0.1s;
+            }
         }
         &_link {
             font-size: 15px;
@@ -93,7 +96,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        margin-left: 33px;
+        flex: auto;
         padding-bottom: 21px;
     }
     &__call {
