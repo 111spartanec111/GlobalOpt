@@ -28,24 +28,28 @@ $(document).ready(function(){
 		autoplay:false,
 		speed:1000,
 		centerMode: true,
+    
 		responsive:[
       {
-				breakpoint: 920,
+				breakpoint: 994,
 				settings: {
 					slidesToShow:1,
-          centerMode: false,
+          centerMode: true,
+         
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow:1
+					slidesToShow:1,
+          centerMode: true,
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 320,
 				settings: {
-					slidesToShow:1
+					slidesToShow:1,
+          centerMode: true,
 				}
 			}
 		]
@@ -85,7 +89,7 @@ $(' .modal__close').on('click', function() {
 
 // Меню
 // const hamburger = document.querySelector('.hamburger'),
-//       menu = document.querySelector('.menu'),
+//       menu = document.querySelector('.menu__header'),
 //       close = document.querySelector('.menu__close');
 //       overlay = document.querySelector('.menu__overlay')
      
@@ -102,6 +106,23 @@ $(' .modal__close').on('click', function() {
 //         menu.classList.remove('active');
 //       });
       
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.menu__header'),
+  menuItem = document.querySelectorAll('.menu__header_item'),
+  hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('menu__header_active');
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger_active');
+          menu.classList.toggle('menu__header_active');
+      })
+  })
+})
 
 
 // Заполнение полосок от заданного значения
