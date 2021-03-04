@@ -80,3 +80,24 @@
     #thanks, #consultation {
         display: none;
     }
+
+    #email-error {
+        font-weight: 500;
+        color: red;
+        position: relative;
+        top: -14px;
+    }
+    
+    #name-error {
+        font-weight: 500;
+        color: red;
+        position: relative;
+        top: -14px;
+    }
+    
+    #phone-error {
+        font-weight: 500;
+        position: relative;
+        top: -14px;
+        color: red;
+    }

@@ -82,6 +82,7 @@
         .menu__header {
             width: 600px;
             margin-left: 10px;
+            z-index: 10;
         }
         &__h1 {
             line-height: 1.2;
@@ -157,6 +158,15 @@
     }   
     
     .header {
+        justify-content: space-around;
+        &__phone {
+            flex: unset;
+            align-items: center;
+        }
+        &__h2 {
+            line-height: 42px;
+        }
+
         
         .menu__header {
             position: fixed;
@@ -183,6 +193,20 @@
                 font-size: 20px;
             }
         }
+    }
+    .first {
+        padding-bottom: 30px;
+    }
+    .first__descr {
+        line-height: 20px;
+
+    }
+    .first__flex_item {
+        width: 100px;
+    }
+    .advantages__wrapper {
+        align-items: center;
+        flex-direction: column;
     }
     .hamburger {
         display: block;
@@ -216,8 +240,30 @@
                 }
             }
         }
-       
-        
+    }
+    .footer {
+        padding-top: 13px;
+    }
+    .footer__header {
+        flex-wrap: wrap;
+        padding: 0 10px 13px 10px;
+    }
+    .footer__title {
+        margin-left: 0;
+    }
+    .footer__phone {
+        align-items: flex-start;
+    }
+    .footer__descr {
+        margin-top: 12px;
+    }
+    .pageup {
+        bottom: 15px;
+        right: 10px;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
