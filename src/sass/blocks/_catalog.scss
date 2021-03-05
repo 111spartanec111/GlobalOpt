@@ -87,6 +87,12 @@
             &:hover {
                 color : black;
             }
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                outline: none;
+            }
         }
         &__back {
             margin: 0 auto;
@@ -106,6 +112,12 @@
             text-transform: uppercase;
             &:hover {
                 color : black;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                outline: none;
             }
         }
         hr {
@@ -264,6 +276,13 @@
         font-weight: 400;
         text-transform: uppercase;
         outline: 0;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            transform: translateY(2px);
+        }
     }
     &_button-wrapper {
         position: absolute;

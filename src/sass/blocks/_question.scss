@@ -61,6 +61,7 @@
             font-weight: 500;
             border: 1px solid rgba(0,0,0,0.2);
             border-radius: 10px;
+            outline: 0;
         }
         #email-error {
             font-weight: 500;
@@ -106,6 +107,13 @@
         font-weight: 400;
         text-transform: uppercase;
         outline: 0;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            transform: translateY(2px);
+        }
     }
     &__button-wrapper {
         margin: 0 auto;

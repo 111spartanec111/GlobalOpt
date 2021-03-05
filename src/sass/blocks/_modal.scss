@@ -74,6 +74,14 @@
         border-radius: 25px ;
         background-color: $main-color;
         color:#ffffff;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            transform: translateY(2px);
+        }
     }
  }
 
