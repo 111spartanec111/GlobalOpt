@@ -376,16 +376,28 @@
             left: 0;
         }
     }
+    .footer {
+        min-height: 170px;
+    }
     .footer__title {
         display: none;
     }
     .footer__phone {
         align-items: flex-end;
+        margin-right: 10px;
+    }
+    .footer__site {
+        margin-bottom: 5px;
+        margin-right: 8px;
+    }
+    .footer__policy {
+        margin-right: 8px; 
     }
     .header__btn {
         
         margin: 0 auto;
         margin-top: 10px;
+        
     }
     .footer__descr {
         flex-wrap: wrap;
