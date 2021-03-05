@@ -28,7 +28,7 @@ $(document).ready(function(){
 		autoplay:false,
 		speed:1000,
 		centerMode: true,
-    
+    variableWidth: true,
 		responsive:[
       {
 				breakpoint: 994,
