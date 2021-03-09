@@ -26,6 +26,7 @@
     "not dead"
   ],
   "dependencies": {
-    "gulp-sourcemaps": "^3.0.0"
+    "gulp-sourcemaps": "^3.0.0",
+    "source-map": "^0.7.3"
   }
 }
