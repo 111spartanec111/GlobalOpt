@@ -21,11 +21,14 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
-        .pipe(sourcemaps.init())  
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(rename({suffix: ".min", extname: ".css"}))
-        .pipe(autoprefixer({cascade: true}))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+          
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(rename({suffix: '.min', extname:'.css'}))
+        
+        
+        // .pipe(autoprefixer({cascade: true}))
+        // .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(sourcemaps.init())
         .pipe(sourcemaps.write('.')) 
         .pipe(gulp.dest("dist/css"))
         .pipe(gulp.dest("src/css"))
@@ -43,7 +46,7 @@ gulp.task('watch', function() {
 
 gulp.task('html', function () {
     return gulp.src("src/*.html")
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({ collapseWhitespace: false }))
         .pipe(gulp.dest("dist/"));
 });
 

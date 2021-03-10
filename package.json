@@ -17,7 +17,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
   },
   "browserslist": [
     "last 1 version",
@@ -25,8 +26,5 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {
-    "gulp-sourcemaps": "^3.0.0",
-    "source-map": "^0.7.3"
-  }
+  "dependencies": {}
 }
