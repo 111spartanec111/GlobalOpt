@@ -96,6 +96,10 @@
             margin-top: 10px;
         }
     }
+    .stripe {
+        text-align: center;
+        margin-top: 20px;
+    }
     .first {
         padding-bottom: 30px;
     }
@@ -148,6 +152,9 @@
         flex-direction: column;
         align-items: center;
         padding: 18px 40px 15px 40px;
+        input {
+            width: 400px;
+        }
     }
     .question__modal {
         width: 100%;
@@ -362,10 +369,12 @@
         flex-wrap: wrap;
     }
     .question-form {
-
-        padding: 18px 0px 10px 0px;
+        padding: 18px 10px 10px 10px;
+        input {
+            width: 100%;
+        }
         textarea {
-            width: 267px;
+            width: 100%;
             min-height: 160px;
         }
         #name-error {
@@ -386,6 +395,8 @@
             left: 0;
         }
     }
+    
+
     .footer {
         min-height: 170px;
     }

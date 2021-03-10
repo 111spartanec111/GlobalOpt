@@ -72,8 +72,9 @@
         margin-left: 50px;
         width: 615px;
         &_item {
-            border-right: 1px dotted #ffffff;
+            border-right: 1px solid #ffffff;
             padding-right: 10px;
+            line-height: 16px;
             &:last-child {
 			    border-right: none;
             }
