@@ -55,7 +55,7 @@
         flex-wrap: wrap;
     }
     .work__cart {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .agent__subtitle {
         margin-top: 19px;
@@ -210,6 +210,9 @@
                 padding-right: 0;
                 border: none;
                 margin: 10px;
+                border-bottom: 2px solid  #ec644b;
+                border-left: 2px solid #e03819;
+                padding: 5px;
             }
             &_link {
                 font-size: 20px;
@@ -225,6 +228,7 @@
     }
     .first__flex_item {
         width: 100px;
+        margin-top: 10px;
     }
     .advantages__wrapper {
         align-items: center;
@@ -396,6 +400,9 @@
         }
     }
     
+    .map {
+        height: 290px;
+    }
 
     .footer {
         min-height: 170px;

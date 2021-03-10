@@ -50,9 +50,10 @@
         }
     }
     &__img {
+        position: relative;
         display: flex;
         align-items: center;
-        width: 63px;
+        // width: 63px;
         height: 63px;
     }
 }
